@@ -7,7 +7,7 @@ class AUTOSCALING(pulumi.ComponentResource):
     Create an autoscaling group of EC2 instances.
     """
     def __init__(self, name, environment, type, opts = None):
-        super().__init__('pkg:index:VPC', name, None, opts)
+        super().__init__('pkg:index:AUTOSCALING', name, None, opts)
         self.name = name
         self.environment = environment
         self.type = type
@@ -20,7 +20,7 @@ class AUTOSCALING(pulumi.ComponentResource):
         else:
             return self.output
 
-    def Create(self, Image_Id, InstanceSize, KeyName, Role, VpcId, SubnetIds, UserData="", DesiredCapacity=0, MaxSize=3, MinSize=0, IngressPolicy=None, EgressPolicy=None):
+    def Create(self, Image_Id, InstanceSize, KeyName, Role, VpcId, SubnetIds, DesiredCapacity=0, MaxSize=3, MinSize=0, IngressPolicy=None, EgressPolicy=None):
 
         instance_profile = aws.iam.InstanceProfile(
             "InstanceProfile-{}".format(self.stack_name),
@@ -53,7 +53,6 @@ class AUTOSCALING(pulumi.ComponentResource):
             iam_instance_profile=instance_profile,
             security_groups=[securityGroup.id],
             key_name=KeyName,
-            user_data=UserData,
             root_block_device= {
                 'deleteOnTermination': 'true',
                 'volumeType': 'gp2',

@@ -17,4 +17,8 @@ config:
   - 10.100.101.0/24
   - 10.100.102.0/24
   - 10.100.103.0/24
-  
+  development:Ec2AMI: ami-0dba2cb6798deb6d8
+  development:Ec2Size: t2.medium
+  development:KeyName: brayest-us-east-1
+  development:Ec2Role: arn:aws:iam::695292474035:role/Ec2_SSM
+  development:AutoScalingDesiredCapacity: 3
