@@ -1,3 +1,20 @@
 encryptionsalt: v1:E4ZYgee/mgc=:v1:5MyZYIW0lNeo6nab:T6KOiQTY9XfSGEbJJwgT8tbciLyZdg==
 config:
   aws:region: us-east-1
+  development:StackName: brayest
+  development:Environment: dev
+  development:KeyName: nclouds-brayest-us-east-1
+  development:CidrBlock: 10.100.0.0/16
+  development:AvailabilityZones:
+  - us-east-1a
+  - us-east-1b
+  - us-east-1c
+  development:PublicSubnetsCidrs:
+  - 10.100.1.0/24
+  - 10.100.2.0/24
+  - 10.100.3.0/24
+  development:PrivateSubnetsCidr:
+  - 10.100.101.0/24
+  - 10.100.102.0/24
+  - 10.100.103.0/24
+  
