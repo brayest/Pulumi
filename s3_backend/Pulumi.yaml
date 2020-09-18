@@ -1,0 +1,6 @@
+name: s3_backend
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: S3 backend bucket in AWS

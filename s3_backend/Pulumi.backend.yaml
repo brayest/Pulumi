@@ -1,0 +1,5 @@
+encryptionsalt: v1:Q/VWRXiJJhc=:v1:EIUSkMr4FVhA5EYi:MuKTFNDCjTWNawNQNv+Q+/AtAxPupA==
+config:
+  aws:region: us-east-1
+  s3_backend:CompanyName: nclouds
+  s3_backend:Environment: dev
