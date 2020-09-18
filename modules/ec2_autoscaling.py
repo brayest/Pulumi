@@ -6,8 +6,8 @@ class AUTOSCALING(pulumi.ComponentResource):
     """
     Create an autoscaling group of EC2 instances.
     """
-    def __init__(self, name, environment, type, ops = None):
-        super().__init__('pkg:index:VPC', Name, None, opts)
+    def __init__(self, name, environment, type, opts = None):
+        super().__init__('pkg:index:VPC', name, None, opts)
         self.name = name
         self.environment = environment
         self.type = type
