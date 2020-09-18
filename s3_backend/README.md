@@ -2,7 +2,7 @@
 
 1. Download Pulumi: curl -fsSL https://get.pulumi.com | sh
 2. AWS CLI needs to be in place: https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
-3. Set the AWS profile to be used in current terminal  with export *AWS_PROFILE = <profile>*, of the desired AWS configuration.
+3. Set the AWS profile to be used in current terminal  with export *AWS_PROFILE = profile*, of the desired AWS configuration.
 4. Download this repository.
 5. This repository is already a pulumi project. No need to create a new one.
 6. Make sure to setup the environment `python3 -m venv venv`.
