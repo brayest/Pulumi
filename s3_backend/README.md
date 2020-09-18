@@ -9,5 +9,6 @@
 7. Activate it `source venv/bin/activate`.
 8. And install the requirements `pip3 install -r requirements.txt`.
 9. Just for the backend bucket creation use a local backend `pulumi login --local`
-10. Set a password for the local pulumi backend, later you can set the ENV variable `export PULUMI_CONFIG_PASSPHRASE="PASSWORD"`.
-11. Execute `pulumi up` and the bucket will be created.
+10. Execute `pulumi up` and the bucket will be created.
+11. Set a password for the local pulumi backend, later you can set the ENV variable `export PULUMI_CONFIG_PASSPHRASE="PASSWORD"`.
+12. Depending on how you name the stack, modify the pulumi YAML that was generated when creating the stack. 

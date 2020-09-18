@@ -1,0 +1,24 @@
+encryptionsalt: v1:o/EgO3LUO6s=:v1:l2hWbPBjYSO8n7lL:Gw4bS5lf6QRahmxWmdnxk0PoOO9Z9Q==
+config:
+  aws:region: us-east-1
+  development:StackName: brayest
+  development:Environment: dev
+  development:KeyName: nclouds-brayest-us-east-1
+  development:CidrBlock: 10.100.0.0/16
+  development:AvailabilityZones:
+  - us-east-1a
+  - us-east-1b
+  - us-east-1c
+  development:PublicSubnetsCidrs:
+  - 10.100.1.0/24
+  - 10.100.2.0/24
+  - 10.100.3.0/24
+  development:PrivateSubnetsCidr:
+  - 10.100.101.0/24
+  - 10.100.102.0/24
+  - 10.100.103.0/24
+  development:Ec2AMI: ami-0dba2cb6798deb6d8
+  development:Ec2Size: t2.medium
+  development:KeyName: brayest-us-east-1
+  development:Ec2Role: arn:aws:iam::695292474035:role/Ec2_SSM
+  development:AutoScalingDesiredCapacity: 3
