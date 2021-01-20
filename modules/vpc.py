@@ -47,7 +47,7 @@ class VPC(pulumi.ComponentResource):
 
         dhcpOptions = aws.ec2.VpcDhcpOptions(
             "VpcDhcpOptions-{}".format(self.stack_name),
-            domain_name = "advinow.int",
+            domain_name = "domain.int",
             domain_name_servers = ["AmazonProvidedDNS"],
             tags = {
                 "Name": "VpcDhcpOptions-{}".format(self.stack_name)
