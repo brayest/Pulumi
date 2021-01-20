@@ -15,7 +15,7 @@ In order to setup and manage an environment, it is necessary to follow this step
   6. Make sure to setup the environment `python3 -m venv venv`.
   7. Activate it `source venv/bin/activate`.
   8. And install the requirements `pip3 install -r requirements.txt`.
-  5. pulumi login --cloud-url s3://advinow-infrastructure-us-east-1
+  5. pulumi login --cloud-url s3://<back_end_s3_bucket>
   9. Pulumi works with a password `export PULUMI_CONFIG_PASSPHRASE="PASSWORD"`
   10. Select or create the stack to use `pulumi stack init` or `pulumi stack select us-west-2`
   11. After installation the following command should work `pulumi refresh`, or `pulumi up`. Where the later is to create.
